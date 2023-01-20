@@ -83,95 +83,87 @@ const ClassNotice = ({ currentUser, userDbData }) => {
 
     }, [classDataBase]);
 
-    if (currentUser) {
-        return (
-            <>
-                <Navbar />
-                <div className="class-notice">
-                    <div className="">
-                        <h1 className="text-center">{subjectName}</h1>
-                    </div>
-                    {
-                        currentUser.uid === classUserUID ? (
-                            <div className="NoticeInpute ">
-                                <form onSubmit={formHandler} >
-                                    <label htmlFor="Notice"><i>Notice Title</i> </label><br />
-                                    <input
-                                        type="text"
-                                        className='notice-heading-name-enter'
-                                        placeholder='Enter Notice Title'
-                                        onChange={(e) => setNoticeTitle(e.target.value)}
-                                    /><br />
-                                    <input
-                                        type="file" className='files-enter'
-                                    /><br />
-                                    <button
-                                        className='create-classroom-submit-button'
-                                        type="submit"
-                                        disabled={btnDisable}
-                                    >
-                                        Submit
-                                    </button>
-                                    {
-                                        progress > 0 ? (
-                                            <h6 style={{ color: "green" }}>
-                                                Please wait, File is Uploading ... {progress}%
-                                            </h6>
-                                        )
-                                            :
-                                            (" ")
-                                    }
 
-                                </form>
-
-                            </div>
-                        )
-                            :
-                            ("")
-
-                    }
-
-
-                    <div className='Noticefication-box-main'>
-                        {
-                            noticesInfo.map((doc) => {
-                                return (
-                                    <div className='notice-box shadow-lg' key={doc.id}>
-                                        <img src={doc.noticeUserPhoto} className='notice-profile-admin-img' alt="AdminImage" height="100" width="200" />
-                                        <span style={{ float: "left" }}>{doc.noticeUserName}</span>
-                                        <a
-                                            href={doc.urls}
-                                        >{doc.noticetitle}</a>
-                                        <p style={{ color: "red", float: "right" }}>{doc.date}</p>
-                                        {
-                                            currentUser.uid === doc.noticeUserUID ? (
-                                                <button
-                                                    onClick={() => {
-                                                        deleteHandler(doc.id);
-                                                    }}
-                                                >Delete</button>
-                                            ) : ("")
-                                        }
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
+    return (
+        <>
+            <Navbar />
+            <div className="class-notice">
+                <div className="">
+                    <h1 className="text-center">{subjectName}</h1>
                 </div>
-            </>
+                {
+                    currentUser.uid === classUserUID ? (
+                        <div className="NoticeInpute ">
+                            <form onSubmit={formHandler} >
+                                <label htmlFor="Notice"><i>Notice Title</i> </label><br />
+                                <input
+                                    type="text"
+                                    className='notice-heading-name-enter'
+                                    placeholder='Enter Notice Title'
+                                    onChange={(e) => setNoticeTitle(e.target.value)}
+                                /><br />
+                                <input
+                                    type="file" className='files-enter'
+                                /><br />
+                                <button
+                                    className='create-classroom-submit-button'
+                                    type="submit"
+                                    disabled={btnDisable}
+                                >
+                                    Submit
+                                </button>
+                                {
+                                    progress > 0 ? (
+                                        <h6 style={{ color: "green" }}>
+                                            Please wait, File is Uploading ... {progress}%
+                                        </h6>
+                                    )
+                                        :
+                                        (" ")
+                                }
 
-        )
-    }
-    else {
-        return (
-            <>
-                <RegistraionSignUp />
-            </>
-        )
-    }
+                            </form>
+
+                        </div>
+                    )
+                        :
+                        ("")
+
+                }
 
 
+                <div className='Noticefication-box-main'>
+                    {
+                        noticesInfo.map((doc) => {
+                            return (
+                                <div className='notice-box shadow-lg' key={doc.id}>
+                                    <img src={doc.noticeUserPhoto} className='notice-profile-admin-img' alt="AdminImage" height="100" width="200" />
+                                    <span style={{ float: "left" }}>{doc.noticeUserName}</span>
+                                    <a
+                                        href={doc.urls}
+                                    >{doc.noticetitle}</a>
+                                    <p style={{ color: "red", float: "right" }}>{doc.date}</p>
+                                    {
+                                        currentUser.uid === doc.noticeUserUID ? (
+                                            <button
+                                                onClick={() => {
+                                                    deleteHandler(doc.id);
+                                                }}
+                                            >Delete</button>
+                                        ) : ("")
+                                    }
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </>
 
+    )
 }
+  
+    
+
 
 export default ClassNotice

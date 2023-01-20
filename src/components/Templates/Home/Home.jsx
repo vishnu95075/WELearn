@@ -36,7 +36,7 @@ const Home = ({ currentUser }) => {
     navigation(navigateVCallLink);
     window.location.reload()
   }
-  if (currentUser) {
+ 
     return (
       <>
         <Navbar />
@@ -94,14 +94,7 @@ const Home = ({ currentUser }) => {
         </div>
       </>
     )
-  }
-  else {
-    return (
-      <>
-        <RegistraionSignUp />
-      </>
-    )
-  }
+ 
 }
 
 export default Home
