@@ -1,0 +1,40 @@
+.home {
+   background-color: rgba(255, 0, 0, 0.7);
+}
+
+.home .copy-vcall-link {
+    margin-top: 3px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    float: right;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+
+.home .copy-vcall-link input,
+button {
+    border: none;
+    padding: 4px;
+    background: rgba(0, 128, 0, 0.701);
+}
+
+
+.home-container {
+    border: 5px solid;
+    margin: auto;
+    width: 80%;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+}
+.home .carousel-inner .carousel-item{
+    background-color: rgba(255, 0, 0, 0); 
+}
+.home .carousel-inner .carousel-item img {
+    background-color: rgba(255, 0, 0, 0.7);
+    box-shadow: 3px;
+    border-radius: 10px;
+    height: 80vh;
+    width: 60vw;
+    background-color: #fff;
+}
