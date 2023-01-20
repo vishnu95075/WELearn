@@ -65,16 +65,26 @@ const Navbar = () => {
                             <NavLink className="nav-link" to="/admin" >ADMINISTRATION</NavLink>
                         </li>
                     </ul>
-                    <img
-                        onClick={
-                            (e) => {
-                                navigation('/profile');
+                    {
+                        currentUser ? (<img
+                            onClick={
+                                (e) => {
+                                    navigation('/profile');
+                                }
                             }
-                        }
-                        src={currentUser.photoURL}
-                        className='navebar-profile-img-img-cropper'
-                        alt="UserPic" height="100" width="200"
-                    />
+                            src={currentUser.photoURL}
+                            className='navebar-profile-img-img-cropper'
+                            alt="UserPic" height="100" width="200"
+                        />
+                        ) :
+                            (
+                                <>
+                                    <NavLink className="nav-link" to="/login" >Log In</NavLink>
+                                    <NavLink className="nav-link" to="/signup" >Sign Up</NavLink>
+                                </>
+                            )
+                    }
+
                 </div>
             </nav>
         </div>

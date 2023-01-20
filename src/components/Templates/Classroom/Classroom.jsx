@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { FirestoreDb } from "../../../config/firebase";
 import { collection, doc, onSnapshot, setDoc, deleteDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
-import RegistraionSignUp from '../RegistrationSignUp/RegistraionSignUp';
 import Navbar from '../Navbar/Navbar';
 
 const Classroom = ({ currentUser, userDbData }) => {

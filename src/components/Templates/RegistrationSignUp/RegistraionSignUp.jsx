@@ -7,6 +7,7 @@ import { createUserWithEmailAndPassword, sendEmailVerification, updateProfile } 
 import { doc, setDoc } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { auth } from "../../../config/firebase";
+import Navbar from '../Navbar/Navbar';
 
 const RegistraionSignUp = () => {
     const roleAuth = false;
@@ -42,7 +43,7 @@ const RegistraionSignUp = () => {
                 setSubmitButtonDisabled(false);
                 return;
             }
-            else if (studentId.length !== 12 && department.length>=3) {
+            else if (studentId.length !== 12 && department.length >= 3) {
                 setErrorMsg("Please enter vailid student Id");
                 setSubmitButtonDisabled(false);
                 return;
@@ -121,6 +122,7 @@ const RegistraionSignUp = () => {
     return (
 
         <>
+            <Navbar />
             <div className="registration-signUp-form ">
                 <form className="needs-validation jumbotron" onSubmit={formHandler} >
                     <h3>Registration and Sign Up Form</h3>
@@ -201,9 +203,9 @@ const RegistraionSignUp = () => {
                                 Looks good!
                             </div>
                         </div>
-            
+
                         <div className="col-md-6 mb-3">
-                       <label htmlFor="validationTooltip02">Student Id</label>
+                            <label htmlFor="validationTooltip02">Student Id</label>
                             <input
                                 type="text"
                                 className="form-control"

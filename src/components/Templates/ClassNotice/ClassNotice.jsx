@@ -5,7 +5,6 @@ import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { FirestoreDb, storage } from "../../../config/firebase";
 import { useParams } from 'react-router-dom';
 import './ClassNotice.css';
-import RegistraionSignUp from '../RegistrationSignUp/RegistraionSignUp';
 import Navbar from '../Navbar/Navbar';
 
 const ClassNotice = ({ currentUser, userDbData }) => {

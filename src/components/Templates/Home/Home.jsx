@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import RegistraionSignUp from '../RegistrationSignUp/RegistraionSignUp'
 import Navbar from '../Navbar/Navbar'
 import { userCallId } from '../../../config/firebase'
 import { useEffect } from 'react'
