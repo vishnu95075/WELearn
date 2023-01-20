@@ -48,6 +48,7 @@ const ClassNotice = ({ currentUser, userDbData }) => {
         files = "";
     }
 
+    
     const submitHandler = async (urls) => {
         let d = new Date();
         const dd = `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`;
