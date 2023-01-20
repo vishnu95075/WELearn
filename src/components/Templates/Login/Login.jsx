@@ -12,13 +12,10 @@ function Login() {
   const [errorMsg, setErrorMsg] = useState("");
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
-  console.log("Email is ", email);
-  console.log("Password is ", password);
-  console.log("Bolean ", (email || password));
   const handleSubmission = (e) => {
     e.preventDefault();
     if (email.length <= 4 || password.length < 6) {
-      console.log("Eneer fieldd");
+
       setErrorMsg("Fill The Valid Value ");
       return;
     }

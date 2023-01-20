@@ -39,7 +39,7 @@ if (roomId) {
 } else {
   firepadRef = firepadRef.push();
   // window.history.replaceState(null, "Meet", "?id=" + firepadRef.key);
-  console.log("\n\n  firepadRef id ", firepadRef.key)
+  
   firepadRefId = firepadRef.key;
 }
 

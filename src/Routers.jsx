@@ -33,8 +33,6 @@ function Routers() {
 
   useEffect(() => {
     localStorage.setItem('localStorageUserName', currentUser.displayName);
-    console.log("User Name is ",currentUser.displayName);
-    console.log("Data is \n\n ",currentUser);
   }, [currentUser])
 
   const userDataGet = async (id) => {

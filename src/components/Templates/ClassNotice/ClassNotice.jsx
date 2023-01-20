@@ -21,7 +21,7 @@ const ClassNotice = ({ currentUser, userDbData }) => {
     const [progress, setProgress] = useState(0);
     const [noticesInfo, setNoticesInfo] = useState([]);
 
-    console.log("classUserUID ", classUserUID);
+
 
     const formHandler = (e) => {
         setBtnDesable(true);
