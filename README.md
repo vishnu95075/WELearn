@@ -20,3 +20,4 @@ Google Meet Clone with React js, WebRTC,Firstore and Firebase.
 * Show current active users in given Room 
 * Voice Chat (Buggy, but main features work) 
 ## Files Structure
+![GitWElearn](https://user-images.githubusercontent.com/75454756/215491037-5751f02e-b40e-40a3-bba4-aa03bdea8c7f.jpg)
