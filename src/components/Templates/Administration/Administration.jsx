@@ -12,7 +12,7 @@ const Administration = ({ currentUser, userDbData }) => {
 
 
     const deleteHandler = async (idd) => {
-        const deleteDocData = doc(FirestoreDb, collageNoticesDb, idd);
+        // const deleteDocData = doc(FirestoreDb, collageNoticesDb, idd);
 
         const confirmMessage = `Sure, You want to Update`;
         if (window.confirm(confirmMessage)) {

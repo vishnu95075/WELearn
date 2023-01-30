@@ -1,0 +1,49 @@
+.footer {
+    align-content: flex-end;
+    background-color: red;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    padding-left: 6rem;
+}
+
+.footer .about-us {
+    background-color: rgba(188, 52, 52, 0.7);
+    margin: 15px;
+    padding-left: 10px;
+    margin-left: 40px;
+    border-radius: 7px;
+    height: 250px;
+    width: 300px;
+}
+
+.footer .Product-link {
+    background-color: rgba(188, 52, 52, 0.7);
+    margin: 15px;
+    padding-left: 10px;
+    margin-left: 40px;
+    border-radius: 7px;
+    height: 250px;
+    width: 300px;
+}
+
+.footer .connect-links {
+    background-color: rgba(188, 52, 52, 0.7);
+    padding-left: 10px;
+    margin: 15px;
+    margin-left: 40px;
+    border-radius: 7px;
+    height: 250px;
+    width: 300px;
+}
+
+@media screen and (max-width: 700px){
+    .footer{
+        padding: 0;
+    }
+    
+}

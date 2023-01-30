@@ -9,8 +9,6 @@ const Contact = ({ currentUser }) => {
     <>
       <Navbar />
 
-
-
       <div className="contact-main-cantainer">
 
         <div className="contact-paragraph">
