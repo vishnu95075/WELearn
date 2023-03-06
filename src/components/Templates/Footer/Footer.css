@@ -1,4 +1,5 @@
 .footer {
+    color: whitesmoke;
     align-content: flex-end;
     background-color: red;
     display: flex;
@@ -41,9 +42,21 @@
     width: 300px;
 }
 
-@media screen and (max-width: 700px){
-    .footer{
+.reserved {
+    color: whitesmoke;
+    text-align: center;
+    align-items: center;
+    background: #000;
+}
+
+.reserved p {
+    
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
         padding: 0;
     }
-    
+
 }

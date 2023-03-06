@@ -16,6 +16,7 @@ const Profile = ({ currentUser, userDbData }) => {
     }
 
     if (currentUser && userDbData) {
+        // console.log(currentUser.displayName);
         return (
             <div>
                 <Navbar/>
@@ -35,14 +36,13 @@ const Profile = ({ currentUser, userDbData }) => {
                                 width="170"
                                 alt='userImage' />
                         </div>
-                        <h4>Welcome {currentUser.displayName}</h4>
-                        <h4>Email:- {currentUser.email}</h4>
-                        <h4>Email:- {userDbData.name}</h4>
-                        <h4>Email:- {userDbData.email}</h4>
-                        <h4>Contact No {userDbData.contact}</h4>
-                        <h4>Student Id {userDbData.studentId}</h4>
-                        <h4>Deapartment is {userDbData.department}</h4>
-                        <h4>Role is {userDbData.role}</h4>
+                       
+                        <h3>{currentUser.displayName}</h3>
+                        <h4 className='email'>Email:- {currentUser.email}</h4>
+                        <h4 className='contact'>Contact No {userDbData.contact}</h4>
+                        <h4 className='studentId'>Student Id {userDbData.studentId}</h4>
+                        <h4 className='department'>Deapartment is {userDbData.department}</h4>
+                        <h4 className='role'>Role is {userDbData.role}</h4>
                     </div>
                 </div>
             </div>
