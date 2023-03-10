@@ -18,7 +18,7 @@ const Footer = () => {
           <p>Notice</p>
           <p>Syllabus</p>
           <p>Notes</p>
-          <p>Instragram</p>
+          
         </div>
         <div className="connect-links">
           <h5>Connect </h5>
@@ -26,12 +26,13 @@ const Footer = () => {
           <p>Twitter</p>
           <p>Youtube</p>
           <p>Linkdin</p>
+          <p>Instragram</p>
         </div>
 
       </div>
       <div className="reserved">
-        <p> Copyright 1999-2023 by Refsnes Data. All Rights Reserved. <br />
-          W3Schools is Powered by W3.CSS.</p>
+        <p> Copyright 2023 by Refsnes Data. <br /> All Rights Reserved. <br />
+          WELearn is Powered by Ramgarh Engineering College.</p>
       </div>
     </>
   )
