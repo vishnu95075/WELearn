@@ -37,8 +37,6 @@ const Profile = ({ currentUser, userDbData }) => {
                             </div>
                             <p>{currentUser.displayName}</p>
                         </div>
-
-
                         <div className="profile-Datail">
                             <h3>{currentUser.displayName}</h3>
                             <p className='email'>Email:- {currentUser.email}</p>
