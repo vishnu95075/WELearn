@@ -6,14 +6,14 @@ const Footer = () => {
 
       <div className="footer">
         <div className="about-us">
-          <h5>About Us</h5>
+          <h4>About Us</h4>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi,
             neque! Ullam mollitia ratione dolore ea, voluptatum lore5
             Lorem ipsum dolor sit amet. ducimus soluta accusamus,
           </p>
         </div>
         <div className="Product-link">
-          <h5>Product </h5>
+          <h4>Product </h4>
           <p>Classroom</p>
           <p>Notice</p>
           <p>Syllabus</p>
@@ -21,7 +21,7 @@ const Footer = () => {
           
         </div>
         <div className="connect-links">
-          <h5>Connect </h5>
+          <h4>Connect Us</h4>
           <p>Facebook</p>
           <p>Twitter</p>
           <p>Youtube</p>
